@@ -1,0 +1,11 @@
+1.	Coding:
+	  ⁃	const PI = 3.14;
+	  ⁃	PI = 42;
+	2.	Q1: The difference between “var” and “let” is:
+	  ⁃	“Var” is function-scoped, meaning it has a global range that covers the whole function. This gives “var” the ability to be reassigned and redeclared, AND access hoisted variables.
+	  ⁃	“Let” is block-scoped, meaning it’s scope is limited to the block it’s linked to, preventing it from being redeclared.
+	3.	Q2: The difference between “var” and “const” is:
+	  ⁃	“Var’s” function-scope allows it to be reassigned and redeclared, AND access hoisted variables.
+	  ⁃	“Const” is also block-scoped, and it can neither redeclare or reassign.
+	4.	Q3: “Let” has the capability to be reassigned, while “const” can neither redeclare or reassign.
+	5.	Q4: “Hoisting is when variables and declarations are moved to the top of a function scope they’re linked to. “Var” can be used to access these variable’s names and values before they are defined later in the function.
