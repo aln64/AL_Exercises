@@ -1,0 +1,60 @@
+def count_up(start, stop):
+    for i in range(start, stop+1):
+        print(i, end =" ")
+    print()
+
+def in_range(nums, lowest, highest):
+    for i in nums:
+        if i >= lowest and i <= highest:
+            print(f"{i} fits")
+            
+def sum_nums(nums):
+    total = 0
+    list1 = (nums)
+    for unit in range(0, len(list1)):
+        total = total + list1[unit]
+    print(total)
+    
+def any7(nums):
+    count = 0
+    for number in nums:
+        if (number == 7):
+            count += 1
+    if count == 0:
+        print("False")
+    else:
+        print("True")
+        
+def convert_temp(unit_in, unit_out, temp):
+    if unit_in != "f" and unit_in != "c":
+        return f"Invalid unit {unit_in}"
+    elif unit_out != "f" and unit_out != "c":
+        return f"Invalid unit {unit_out}"
+    elif unit_in == "f" and unit_out == "c":
+        temp = (temp - 32) / 9 * 5
+        return temp 
+    elif unit_in == "c" and unit_out == "f":
+        temp = (temp * 5 / 9) + 32
+        return temp
+    elif unit_in == "c" and unit_out == "c":
+        temp = temp
+        return temp
+    elif unit_in == "f" and unit_out == "f":
+        temp = temp
+        return temp
+ 
+def print_upper_words(words):
+    for i in words:
+        print(i.upper())
+
+def e_words(words):
+    for i in words:
+        if i.startswith("e") or i.startswith("E") :
+            print(i.upper())
+            
+def final_words(words, must_start_with):
+    for i in words:
+        for letter in must_start_with:
+            if i.startswith(letter):
+                print(i.upper())
+                break
