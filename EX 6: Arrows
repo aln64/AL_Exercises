@@ -1,3 +1,4 @@
-	1. function double(arr) { return arr.map(function(val) { return val * 2; }); }
-	2. const double = arr => arr.map(val => val * 2);
-	3. const squareAndFindEvens = numbers => numbers.map(val => val ** 2).filter(square => square % 2 === 0)
+1. ES2015 Arrow Functions Shorthand
+	- const double = arr => arr.map(val => val * 2);
+2. Refactor Function
+	- const squareAndFindEvens = numbers => numbers.map(val => val ** 2).filter(square => square % 2 === 0)
